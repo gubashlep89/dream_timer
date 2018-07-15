@@ -1,0 +1,48 @@
+<p id="notice"><%= notice %></p>
+
+
+<div id="countup">
+  Уже прошло
+  <p id="days">00</p>
+  <p class="timeRefDays">days</p>
+  <p id="hours">00</p>
+  <p class="timeRefHours">hours</p>
+  <p id="minutes">00</p>
+  <p class="timeRefMinutes">minutes</p>
+  <p id="seconds">00</p>
+  <p class="timeRefSeconds">second</p>
+</div>
+
+<%= content_tag :div, class: "created_at", data: {date: @post.updated_at.strftime("%b, %d, %Y %I:%M:%S")} do %>
+<% end %>
+
+
+
+<p>
+  <strong>Создан:</strong>
+  <%= @post.created_at.strftime("%b, %d, %Y %I:%M:%S") %>
+</p>
+<% if @post.updated_at %>
+    <p>
+      <strong>Последние обновления:</strong>
+      <%= @post.updated_at %>
+    </p>
+<% end %>
+<p>
+  <strong>Name:</strong>
+  <%= @post.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @post.description %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @post.status %>
+</p>
+
+
+<%= link_to 'Edit', edit_post_path(@post) %> |
+<%= link_to 'Back', posts_path %>

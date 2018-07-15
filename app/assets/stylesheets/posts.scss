@@ -1,0 +1,19 @@
+// Place all the styles related to the Posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+#countup {
+  text-align: center;
+}
+#countup p {
+  display: inline-block;
+  padding: 10px;
+  background: #151515;
+  margin: 0 0 20px;
+  border-radius: 3px;
+  color: white;
+  min-width: 2.6rem;
+  font-size: 35px;
+  line-height: 61px;
+}

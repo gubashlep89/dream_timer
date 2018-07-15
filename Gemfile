@@ -30,6 +30,7 @@ gem 'high_voltage'
 gem 'jquery-rails'
 gem 'pg'
 gem 'simple_form'
+gem 'annotate'
 group :development do
   gem 'better_errors'
   gem 'rails_layout'
